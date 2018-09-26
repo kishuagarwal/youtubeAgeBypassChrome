@@ -1,0 +1,14 @@
+{
+  "name": "Bypass youtube age restriction",
+  "version": "1.0",
+  "description": "Watch youtube age-restricted videos by changing the url",
+  "permissions": ["tabs", "activeTab"],
+  "browser_action": {
+  	"default_icon": "icon.png"
+  },
+  "background": {
+  	"persistent": false,
+  	"scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
