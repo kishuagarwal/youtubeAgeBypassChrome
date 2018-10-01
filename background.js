@@ -3,7 +3,7 @@ chrome.browserAction.onClicked.addListener((tab) => {
 	    let tabUrl = tabs[0].url;
 	    
 	    // Check if it's a youtube url
-	    let youtubeRegex = /https:\/\/www\.youtube\.com\/watch\?v=(\w+)/i;
+	    let youtubeRegex = /https?:\/\/(?:www\.)?youtube\.com\/watch\?v=([-\w]+)/i;
 	    let matches = youtubeRegex.exec(tabUrl);
 	    
 	    if (matches != null && matches.length == 2) {
